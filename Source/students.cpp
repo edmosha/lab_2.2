@@ -1,7 +1,11 @@
 #include "../Header/students.h"
 
+// конструктор по умолчанию
 Students::Students() {
-
+    name = "no_name";
+    faculty = "no_faculty";
+    studNum = 0;
+    goodStudNum = 0;
 };
 
 string Students::GetName() {return name;};
@@ -14,7 +18,7 @@ void Students::SetFaculty(string a) {faculty = a;}
 void Students::SetStudNum(int a) {studNum = a;}
 void Students::SetGoodStudNum(int a) {goodStudNum = a;};
 
-
+// конструктор с параметрами
 Students::Students(string a, string b, int c, int d) {
     name = a;
     faculty = b;
@@ -22,6 +26,7 @@ Students::Students(string a, string b, int c, int d) {
     goodStudNum = d;
 }
 
+Students::~Students() = default;
 
 
 
