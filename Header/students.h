@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <windows.h>
 using namespace std;
 
 
@@ -29,8 +30,10 @@ class Students {
         int goodStudNum;
 };
 
-int Read(Students *pStud, int n);
+void FillingArray(Students *pStud, int n);
 void AddLine(Students *pStud, int n);
 void Print(Students *pStud, int n);
+void Edit(Students *pStud, int n);
+int PercentStud(Students *pStud, int n);
 
 #endif //LAB_2_2_STUDENTS_H
